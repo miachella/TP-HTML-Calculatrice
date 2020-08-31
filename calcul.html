@@ -16,7 +16,7 @@
     <div id="calc" class="container">
       <div class="row">
         <div class="col-md-8">
-          <p id="#texte"></p>
+          <h2 id="texte"></h2>
         </div>
       </div>
       <div class="row">
@@ -93,20 +93,18 @@ crossorigin="anonymous"></script>
 let equation = '';
 let resultat;
 let ecrire = document.querySelector('#texte');
-ecrire.textContent = 'resultat';
 
 
   function ajout(i){
 
     if(i == '+' || i == '-' || i == '/' || i == '*'){
       equation = equation + i;
-      console.log(equation)
+      ecrire.textContent = equation;
     } else if (i == '0' || i == '1' || i == '2' || i == '3' || i == '4' || i == '5' || i == '6' || i == '7' || i == '8' || i == '9' || i == '.'){
       equation = equation + i;
-      console.log(equation)
+      ecrire.textContent = equation;
     } else {
       resultat = eval(equation);
-      console.log(resultat);
       ecrire.textContent = resultat;
     }
   }
