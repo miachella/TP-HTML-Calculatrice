@@ -1,0 +1,21 @@
+#calc{
+    width: 50%;
+    height: auto;
+    background-color: #000066;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.col-md-2, .col-md-3{
+    justify-content: center;
+}
+
+.col-md-8{
+    background-color: #cce5ff;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.row{
+    padding: 0.5rem;
+}
